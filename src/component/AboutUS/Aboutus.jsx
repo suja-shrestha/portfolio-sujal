@@ -1,5 +1,5 @@
 import React from "react";
-import "./Aboutus.css"; 
+import '../AboutUS/aboutus.css';
 import Nav from "../nav/Nav";
 import js from "../../assets/js.png";
 import css from "../../assets/css.png";
