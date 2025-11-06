@@ -54,11 +54,11 @@ const Foot = () => {
             <ul className="contact-list">
               <li>
                 <i className="fas fa-envelope"></i>
-                <span>sujal@example.com</span>
+                <span>shresthasujal949@gmail.com</span>
               </li>
               <li>
                 <i className="fas fa-phone"></i>
-                <span>+977 98XXXXXXXX</span>
+                <span>+977 9768431211</span>
               </li>
               <li>
                 <i className="fas fa-map-marker-alt"></i>
