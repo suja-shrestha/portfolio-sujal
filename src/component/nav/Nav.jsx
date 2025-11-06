@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./nav.css";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,10 +23,11 @@ const Nav = () => {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
-        <div className="nav-brand">
-          <span className="brand-dot">Sujal Shrestha</span>
-        </div>
-
+       <div className="nav-brand">
+  <Link to="/" className="no-underline">
+    <span className="brand-dot">Sujal Shrestha</span>
+  </Link>
+</div>
         {/* ✅ Font Awesome Hamburger */}
         <div className="hamburger-icon" onClick={toggleMenu}>
           <i className={`fas ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
