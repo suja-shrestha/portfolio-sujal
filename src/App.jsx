@@ -1,18 +1,24 @@
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import './App.css';
-import Footer from './component/footer/foot'; // 
+import Nav from './component/nav/Nav';
+import Footer from './component/footer/foot';
 import Hero from './component/hero/Hero';
 import Project from './component/Projects/Project';
 import Aboutus from './component/AboutUS/Aboutus';
 import Contact from './component/Contact/Contact';
-import Nav from './component/nav/Nav'; // 
 
-// ✅ Layout that includes both Nav and Footer on every page
 function Layout() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <Nav />
-      <Outlet /> {/* Page content renders here */}
+      <Outlet />
       <Footer />
     </>
   );
@@ -21,24 +27,12 @@ function Layout() {
 export default function App() {
   const router = createBrowserRouter([
     {
-      element: <Layout />, // ✅ Shared layout
+      element: <Layout />,
       children: [
-        {
-          path: '/',
-          element: <Hero />,
-        },
-        {
-          path: '/project',
-          element: <Project />,
-        },
-        {
-          path: '/about',
-          element: <Aboutus />,
-        },
-        {
-          path: '/contact',
-          element: <Contact />,
-        },
+        { path: '/', element: <Hero /> },
+        { path: '/project', element: <Project /> },
+        { path: '/about', element: <Aboutus /> },
+        { path: '/contact', element: <Contact /> },
       ],
     },
   ]);
