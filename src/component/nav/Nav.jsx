@@ -23,51 +23,37 @@ const Nav = () => {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="nav-brand">
-          {/* <span className="brand-text">Sujal</span> */}
           <span className="brand-dot">Sujal Shrestha</span>
         </div>
 
-        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
+        {/* ✅ Font Awesome Hamburger */}
+        <div className="hamburger-icon" onClick={toggleMenu}>
+          <i className={`fas ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
         </div>
 
         <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
           <li className="nav-item">
-            <NavLink 
-              className="nav-link" 
-              to="/" 
-              onClick={toggleMenu}
-            >
+            <NavLink className="nav-link" to="/" onClick={toggleMenu}>
               <span className="link-icon">🏠</span>
               <span className="link-text">Home</span>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink 
-              className="nav-link" 
-              to="/about" 
-              onClick={toggleMenu}
-            >
+            <NavLink className="nav-link" to="/about" onClick={toggleMenu}>
               <span className="link-icon">👤</span>
               <span className="link-text">About</span>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink 
-              className="nav-link" 
-              to="/project" 
-              onClick={toggleMenu}
-            >
+            <NavLink className="nav-link" to="/project" onClick={toggleMenu}>
               <span className="link-icon">💼</span>
               <span className="link-text">Projects</span>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink 
-              className="nav-link contact-link" 
-              to="/contact" 
+            <NavLink
+              className="nav-link contact-link"
+              to="/contact"
               onClick={toggleMenu}
             >
               <span className="link-icon">✉️</span>

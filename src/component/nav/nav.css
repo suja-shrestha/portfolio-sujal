@@ -62,8 +62,15 @@
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
 }
 
 .nav-brand:hover {
@@ -149,8 +156,15 @@
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 /* Contact Link Special Style */
@@ -166,35 +180,27 @@
 }
 
 /* Hamburger Menu */
-.hamburger {
+
+.hamburger-icon {
   display: none;
-  flex-direction: column;
-  gap: 5px;
+  font-size: 26px;
+  color: white;
   cursor: pointer;
-  padding: 8px;
-  z-index: 1001;
+  transition: transform 0.3s ease, color 0.3s ease;
+  z-index: 99999;
 }
 
-.hamburger span {
-  width: 28px;
-  height: 3px;
-  background: white;
-  border-radius: 3px;
-  transition: all 0.3s ease;
+.hamburger-icon:hover {
+  color: #667eea;
+  transform: scale(1.1);
 }
 
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
-}
 
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-  transform: translateX(-20px);
-}
 
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(8px, -8px);
-}
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -209,12 +215,8 @@
 }
 
 @media (max-width: 768px) {
-  .nav-container {
-    padding: 0 30px;
-  }
-
-  .hamburger {
-    display: flex;
+  .hamburger-icon {
+    display: block;
   }
 
   .nav-menu {
@@ -236,53 +238,8 @@
   .nav-menu.active {
     right: 0;
   }
-
-  .nav-item {
-    width: 100%;
-    opacity: 0;
-    transform: translateX(20px);
-    animation: slideIn 0.3s ease forwards;
-  }
-
-  .nav-menu.active .nav-item:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  .nav-menu.active .nav-item:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .nav-menu.active .nav-item:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  .nav-menu.active .nav-item:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-
-  @keyframes slideIn {
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  .nav-link {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 16px 24px;
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-
-  .link-icon {
-    font-size: 22px;
-  }
-
-  .nav-link::before {
-    transform-origin: center;
-  }
 }
+
 
 @media (max-width: 480px) {
   .nav-container {
@@ -299,7 +256,5 @@
     font-size: 24px;
   }
 
-  .hamburger span {
-    width: 24px;
-  }
+  
 }
