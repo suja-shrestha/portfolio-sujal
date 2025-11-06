@@ -318,7 +318,6 @@
   border-radius: 30px;
   padding: 6px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  animation: gradientRotate 8s ease infinite;
 }
 
 @keyframes gradientRotate {
@@ -376,18 +375,23 @@
   top: 10%;
   left: -60px;
   animation-delay: 0s;
+  z-index: 99999;
 }
 
 .card-2 {
   top: 50%;
   right: -80px;
   animation-delay: 1s;
+    z-index: 99999;
+
 }
 
 .card-3 {
   bottom: 10%;
   left: -40px;
   animation-delay: 2s;
+    z-index: 99999;
+
 }
 
 .card-icon {

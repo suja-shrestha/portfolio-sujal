@@ -23,8 +23,8 @@ const Nav = () => {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="nav-brand">
-          <span className="brand-text">Sujal</span>
-          <span className="brand-dot">.</span>
+          {/* <span className="brand-text">Sujal</span> */}
+          <span className="brand-dot">Sujal Shrestha</span>
         </div>
 
         <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
