@@ -95,7 +95,7 @@ const Aboutus = () => {
 
             <div className="cta-section">
               <a
-                href="https://1drv.ms/b/c/d6b4f9a5d785190e/ESI2Ds_cLB1Dtuy1qEmMNqMBt35y9uteEH9ouLj99vtNzg?e=5cfP4g"
+                href="https://1drv.ms/b/c/d6b4f9a5d785190e/IQCLn2H3x-iRTIgfrjLXxQM4AaB5b1BXW6oktSIxShhnNm4?e=IRkvhb"
                 target="_blank"
                 rel="noopener noreferrer"
               >
