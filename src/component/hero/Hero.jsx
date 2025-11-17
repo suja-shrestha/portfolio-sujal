@@ -53,7 +53,7 @@ const Hero = () => {
 
           <div className="cta-buttons">
             <a
-              href="https://drive.google.com/file/d/130cRtPECzmaitNM1jJ-n577CHB_GqSFl/view?usp=sharing"
+              href="https://drive.google.com/file/d/1e9KwFOk7xQ5qUk46vh0fYsYaZ9Pkuu2Z/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
