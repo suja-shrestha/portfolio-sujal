@@ -6,6 +6,7 @@ import Screenshot1 from "../../assets/Screenshot1.png";
 import Screenshot2 from "../../assets/Screenshot2.png";
 import Screenshot3 from "../../assets/Screenshot3.png";
 import Screenshot4 from "../../assets/Screenshot4.png";
+import Screenshot5 from '../../assets/Screenshot5.png'
 import Foot from "../footer/foot";
 
 const Project = () => {
@@ -56,8 +57,8 @@ const Project = () => {
       id: 5,
       title: "Coming Soon",
       category: "upcoming",
-      image: comming,
-      description: "Exciting new project in development. Stay tuned for updates on this innovative web application.",
+      image: Screenshot4,
+      description: "AI powered web application currently in development. Stay tuned for innovative features and cutting-edge functionalities for recruiters and job seekers.",
       technologies: ["React", "Node.js", "MongoDB"],
       link: "#",
       github: "#"
