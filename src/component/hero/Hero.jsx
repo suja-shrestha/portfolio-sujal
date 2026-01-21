@@ -72,7 +72,7 @@ const Hero = () => {
 
           <div className="social-links">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/sujal.shrestha.545402"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
@@ -81,7 +81,7 @@ const Hero = () => {
               <i className="fab fa-facebook-f"></i>
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/suja-shrestha"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
@@ -90,7 +90,7 @@ const Hero = () => {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/shresthasujal0/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
@@ -99,7 +99,7 @@ const Hero = () => {
               <i className="fab fa-instagram"></i>
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/sujal-shrestha-0318742a5/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
