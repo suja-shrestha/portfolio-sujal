@@ -13,10 +13,10 @@ const Foot = () => {
   ];
 
   const socialLinks = [
-    { icon: "fab fa-facebook-f", url: "https://www.facebook.com", label: "Facebook" },
-    { icon: "fab fa-github", url: "https://github.com", label: "GitHub" },
-    { icon: "fab fa-instagram", url: "https://www.instagram.com", label: "Instagram" },
-    { icon: "fab fa-linkedin-in", url: "https://www.linkedin.com", label: "LinkedIn" }
+    { icon: "fab fa-facebook-f", url: "https://www.facebook.com/sujal.shrestha.545402", label: "Facebook" },
+    { icon: "fab fa-github", url: "https://github.com/suja-shrestha", label: "GitHub" },
+    { icon: "fab fa-instagram", url: "https://www.instagram.com/shresthasujal0/", label: "Instagram" },
+    { icon: "fab fa-linkedin-in", url: "https://www.linkedin.com/in/sujal-shrestha-0318742a5/", label: "LinkedIn" }
   ];
 
   return (
