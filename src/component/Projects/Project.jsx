@@ -57,9 +57,9 @@ const Project = () => {
       id: 5,
       title: "Coming Soon",
       category: "upcoming",
-      image: Screenshot4,
+      image: Screenshot5,
       description: "AI powered web application currently in development. Stay tuned for innovative features and cutting-edge functionalities for recruiters and job seekers.",
-      technologies: ["React", "Node.js", "MongoDB"],
+      technologies: ["React", "Node.js", "Supabase"],
       link: "#",
       github: "#"
     },
